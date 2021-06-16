@@ -1,33 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "colorationtwo",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Coloration 2",
+  "description": "The Sequel to my first ever mod - The Coloration Mod :D",
   "authors": [
-    "Me!"
+    "Mysticpasta1"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://mystic.hypherionmc.me/",
+    "sources": "https://github.com/Mysticpasta1/Coloration-2"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL3",
+  "icon": "assets/colorationtwo/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.mystic.colorationtwo.Main"
+    ],
+    "client": [
+      "com.mystic.colorationtwo.setup.ClientSetup"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "colorationtwo.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"

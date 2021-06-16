@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "colorationtwo:block/color_air_block"
+   }
+}
